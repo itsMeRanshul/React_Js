@@ -1,0 +1,51 @@
+--> React is the library
+-->React provides programming capabilities in the html.
+-->from app.js we will return the html will is rendered by the index.js
+--> No script tag is used in index.html to attach it to the html.
+--> react provides react-script to link js to the index html. 
+
+--->> We can return multiple elements in jsx using fragments. <> ... </>
+      --> Always capatialize the functions that are to be render.
+      --> Jsx is the html written in the javascript.
+      --> BUNDLER IS THERE WHICH TAKE THE INFORMATION IN FORM OF FUNCTIONS OR THE JSX AND CONVERT IT INTO OBJECT.
+                 const ReactElement={
+    type:'a',
+    props:{
+        href:'https://google.com',
+        target:'_blank'
+    },
+    children:'Click this to visit google .com'
+}
+     
+
+       -->{name} It is known as the evaluated expressions 
+       --> We cannot written the javascript in the evaluated expression.
+
+
+       **************************** Hooks ************************
+
+          -> multiple data  updation technique of react in UI is done by HOOKS.
+            1. useeffect
+            2. usereducer
+            3. usecontext
+            4. useeffect ...
+
+        --> If we have to do the UI updation of multiple elements from core javascript then it will be very complex.
+
+           --> usestate(default value, object, number ,array)
+           --> usestate will return two values in form of array [value,function] 
+           -->usecallback - we can use the previous data that is kept in the cache which can be used.
+           --> usecallback - function data can be used again and again
+
+    --> createroot will made the virtual dom and compare it with the browser dom and edit the existing dom of the browser.
+    --> While the browser will made the full dom again which will result in the loading.
+    -->Reconciliation is the algorithm to which we called the virtual dom.
+    -->Reconciliation means updating the dom by comparing them with each other .
+
+
+********************PROPS*******************
+    --> PROPS will made the component reusable.
+    --> Props will make the different value of the single element used multiple time.
+    --> We can transfer the value from one component to another.
+    -->It has access these value using props using that component
+    --> Props is the object from which we can access the values.
