@@ -36,6 +36,7 @@
            --> usestate will return two values in form of array [value,function] 
            -->usecallback - we can use the previous data that is kept in the cache which can be used.
            --> usecallback - function data can be used again and again
+           --> useref - When we have to take the reference of the some object then we use it
 
     --> createroot will made the virtual dom and compare it with the browser dom and edit the existing dom of the browser.
     --> While the browser will made the full dom again which will result in the loading.
