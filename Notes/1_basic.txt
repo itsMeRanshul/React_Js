@@ -44,9 +44,25 @@
     -->Reconciliation means updating the dom by comparing them with each other .
 
 
-********************PROPS*******************
+                                 ********************PROPS*******************
     --> PROPS will made the component reusable.
     --> Props will make the different value of the single element used multiple time.
     --> We can transfer the value from one component to another.
     -->It has access these value using props using that component
-    --> Props is the object from which we can access the values.
+    --> Props is the object from which we can access the values. 
+
+
+                ***********************CUSTOM HOOKS ND REUSABLE COMPONENTS **************************
+
+                **get to know about this in the currencyconverter project**
+        
+        -->Custom hooks will always return the js.
+        -->It will return the array which contain a variable and function.
+        -->useeffect and usestate is used 
+        --> useffect is used to mount and unmount or to call the api.
+        https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2024-03-06/v1/currencies/usd.json
+
+        --> useeffect will cal again and again when there is a change on dependency array.
+
+        -->component is created for reusability
+        -->If you want to use loops in react then be aware of 'KEY'
