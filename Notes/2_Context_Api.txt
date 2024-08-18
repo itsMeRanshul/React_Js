@@ -1,0 +1,54 @@
+***************************** CONTEXT API ***************************
+   --> When theer is many component in nesting and we have to pass some data from top level component to the bottom level components.
+   --> The the data in initial days of react is passed by using props inside each component present in nesting.
+ <DASHBOARD title ="Sneha"/> -->>>>  <RIGHTSIDE title ="Sneha"/> -->>>  <TOPCOM title ="Sneha"/> -->>>  <BOTTOMCOMP title ="Sneha"/>
+
+   --> NOW This prcess is known as " PROP DRILLING ".
+       --> To solve this we can make one Global file that contain the global data and accessable by all the components.
+
+                 {
+                    title:"Sneha"
+                 }
+
+    --> Context Api is used to solve this problem particularly in React.
+    --> For all other technologies similar problem is solved by different libraries and Redux.
+    --> Redux is used for state management ( Data should be transfered in specific organized format).
+    --> React-Redux is used in react.
+
+
+    ****************************************Creating the Context*********************************************
+
+    PART 1 ---:
+        
+               --> Create a new file userContext .
+               --> Create new context inside it using createContext() method and export it.
+               --> If we created a context then it will give us "Provider" bcoz every context is a provider.
+
+                                _
+               <usercontext>     |
+               </usercontext>    |  --> PROVIDER 
+                                _|
+
+               <usercontext>          _
+                 <LOGIN/>              |
+                 <CARD>                |___________>>> childerns
+                     <DATA/>           |           >>>    
+                 </CARD>              _| 
+               </usercontext>
+
+               -->We will wrap the all the component inside the created context which work as a provider.
+               --> Now all the components inside the <usercontext> will get the access of the global varible.
+
+    
+    PART 2 ---:
+
+               --> Create context provider is made by two methods.
+               --> Create new file as userContextProvider .
+               --> Make method userContextProvider which have the {childern} passed in it . 
+               --> {childern} are passed as it is .
+               --> .Provider is the property of userContext which made it a "provider".
+               --> Data that can be access is passed inside the value={{object...}}.
+
+
+    Part 3 ---: 
+              --> useContext() is the hook to access the data.
