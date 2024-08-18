@@ -1,0 +1,46 @@
+     *************************************** REACT ROUTER DOM ***************************************
+  -> Third party application/library of react.
+
+                    ****************************LINK TAG**************************
+  --> Link and Navlink are the functionalities which are new in react-router-DOM.
+  -->Link is used used in place of anchor tag <a> to avoid the refreshment of the page.
+       -> 'href' is replaced by 'TO'.
+          <Link to='\'> </Link>
+               ********************************NAVLINK TAG**************************************
+      
+      --> It provide some extra functionality.
+      --> Inside NavLink when we write the classes in callBack then we have direct access of the variable 'IsActive'.
+      --> Can also access the 'IsPending' variable.
+      --> Navlink is used to show the visitedb element .
+
+          <NavLink className={ (IsActive)=>`
+          dsgjfgsddfkjhs jbdsjkf etc.... ${isActive ? "TRUE" : "FALSE"}
+          `}>
+  
+
+  *********************************OUTLET************************************
+
+  --> It works dynamically.
+  --> It will change the outlet content dynamically and the upper and lower data will remain same.
+
+                           <Header/>
+                                <Outlet/>  ******Only outlet components will change******
+                           <Footer/>
+
+
+  ********************************** DYNAMIC DATA ACCESS ***********************************
+             import React from 'react'
+               import {useParams} from 'react-router-dom'
+
+                function User() {
+                     const {userid}=useParams()
+                                 return (
+                      <div className='bg-gray-400 p-4 text-center border-4 border-black my-3'>User :{userid}</div>
+                      )
+                    }
+
+     *********************** LOADER *************************
+      
+         -> Loader is use to optimize the api fetch .
+         -> When we points the cursor to the tab at that time the data fetching will start which  remove the delay.
+         
