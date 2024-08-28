@@ -1,5 +1,5 @@
-***************************** CONTEXT API ***************************
-   --> When theer is many component in nesting and we have to pass some data from top level component to the bottom level components.
+                       ***************************** CONTEXT API ***************************
+   --> When there is many component in nesting and we have to pass some data from top level component to the bottom level components.
    --> The the data in initial days of react is passed by using props inside each component present in nesting.
  <DASHBOARD title ="Sneha"/> -->>>>  <RIGHTSIDE title ="Sneha"/> -->>>  <TOPCOM title ="Sneha"/> -->>>  <BOTTOMCOMP title ="Sneha"/>
 
@@ -21,6 +21,7 @@
     PART 1 ---:
         
                --> Create a new file userContext .
+               --> Default values can be inserted in the createContext({ Add something that can we default when context is created first })
                --> Create new context inside it using createContext() method and export it.
                --> If we created a context then it will give us "Provider" bcoz every context is a provider.
 
@@ -52,3 +53,5 @@
 
     Part 3 ---: 
               --> useContext() is the hook to access the data.
+
+    *************Two file work of ContextApi is done in only one file of the ContextApi_2*************
